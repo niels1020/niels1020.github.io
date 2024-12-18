@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "retro-font";
+    src: url("../assets/80s-Retro-Future.ttf");
+}
+
+* {
+    font-family: "retro-font";
+}
+
+body::before {
+    content: ":(";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    font-size: 50vw;
+    color: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+p {
+    font-size: 25px;
+    text-align: center;
+}
+* {
+    font-family: "retro-font";
+}
+
+.navbar a:hover {
+    font-size: 50px;
+    color: aliceblue;
+    background-color: darkslategrey;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a {
+    font-size: 50px;
+    color: aliceblue;
+    background-color: black;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: black;
+}
+
+body {
+    background-color: gray;
+}

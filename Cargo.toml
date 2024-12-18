@@ -1,0 +1,8 @@
+[package]
+name = "web_server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+get_if_addrs = "0.5.3"
+threadpool = "1.8.1"
