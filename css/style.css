@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "retro-font";
+    src: url("../assets/80s-Retro-Future.ttf");
+}
+
+* {
+    font-family: "retro-font";
+}
+
+body::before {
+    content: ":)";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    font-size: 50vw;
+    color: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.navbar a:hover {
+    font-size: 4vw;
+    color: aliceblue;
+    background-color: darkslategrey;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a {
+    font-size: 4vw;
+    color: aliceblue;
+    background-color: black;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: black;
+}
+
+.main {
+    text-align: center;
+}
+
+body {
+    background-color: gray;
+}
+
+h1 {
+    font-size: 5vw;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+h1 a {
+    font-size: 5vw;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+p {
+    font-size: 2vw;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+.frame_horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid aliceblue; /* Creates the box */
+    padding: 10px; /* Adds spacing inside the box */
+    width: 50vw; /* Adjust as needed */
+    margin: 10px; /* Optional: Adds spacing outside the box */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow for depth */
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+img {
+    width: 15vw;
+}
+
+h2 {
+    width: 15vw;
+    color: black;
+}

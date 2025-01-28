@@ -1,8 +1,5 @@
 use std::{
-    fs,
-    io::{BufRead, BufReader, Write},
-    net::{TcpListener, TcpStream},
-    path::Path,
+    fmt::format, fs, io::{BufRead, BufReader, Write}, net::{TcpListener, TcpStream}, path::Path
 };
 use get_if_addrs::{get_if_addrs, IfAddr};
 use threadpool::ThreadPool;
@@ -35,15 +32,15 @@ fn handle_connection(mut stream: TcpStream) {
 
     // Match the request path to appropriate file or endpoint
     let (status_line, file_path) = if path == "/" {
-        ("HTTP/1.1 200 OK", &"static/index.html".to_string())
+        ("HTTP/1.1 200 OK", &"index.html".to_string())
     }else {
         // Try to locate the file within the static directory
-        let full_path = format!("static{}", path);
+        let full_path = format!(".{}",path); //remove the first slash in the path
         if Path::new(&full_path.clone()).exists() {
             ("HTTP/1.1 200 OK", &full_path.clone())
         } else {
             println!("file not found: {full_path}");
-            ("HTTP/1.1 404 NOT FOUND", &"static/404.html".to_string())
+            ("HTTP/1.1 404 NOT FOUND", &"404.html".to_string())
         }
     };
 
