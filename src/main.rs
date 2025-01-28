@@ -1,5 +1,5 @@
 use std::{
-    fmt::format, fs, io::{BufRead, BufReader, Write}, net::{TcpListener, TcpStream}, path::Path
+    fs, io::{BufRead, BufReader, Write}, net::{TcpListener, TcpStream}, path::Path
 };
 use get_if_addrs::{get_if_addrs, IfAddr};
 use threadpool::ThreadPool;
