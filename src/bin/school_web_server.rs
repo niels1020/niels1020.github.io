@@ -1,3 +1,4 @@
+#![windows_subsystem = "windows"]
 use std::{
     fs, io::{BufRead, BufReader, Write}, net::{TcpListener, TcpStream}, path::Path
 };
@@ -5,7 +6,7 @@ use get_if_addrs::{get_if_addrs, IfAddr};
 use threadpool::ThreadPool;
 
 fn main() {
-    let ip = get_local_ip().unwrap();
+    let ip = "localhost".to_string();
     let listener: TcpListener = TcpListener::bind(ip.clone()+":0").unwrap();
     let pool = ThreadPool::new(4);
 
