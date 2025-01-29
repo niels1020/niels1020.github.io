@@ -89,6 +89,17 @@ p {
     box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow for depth */
 }
 
+.frame_vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.3vw solid aliceblue; /* Creates the box */
+    margin: 5vw; /* Optional: Adds spacing outside the box */
+    width: 80vw;
+    box-shadow: 1vw 4vw 8vw rgba(0, 0, 0, 0.2); /* Optional: Adds shadow for depth */
+}
+
+
 .vertical {
     display: flex;
     flex-direction: column;
