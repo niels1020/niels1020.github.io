@@ -25,7 +25,3 @@ dist-ssr
 
 #rust
 /target
-
-#godot
-/*/.godot
-*.import
