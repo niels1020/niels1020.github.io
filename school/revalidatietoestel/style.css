@@ -1,0 +1,79 @@
+* {
+    font-family: Candara, serif;
+    font-size: 1vw;
+    user-select: none;
+    color: aliceblue;
+    text-decoration: none;
+    margin: 0.5vw;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: aliceblue;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.blue_horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: dodgerblue;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.red_horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: darkred;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.drawing_image{
+    max-width: 60vw;
+}
+
+h1 {
+    font-size: 3vw;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+h2 a {
+    font-size: 2vw;
+}
+
+h3 {
+    font-size: 1.5vw;
+}
+
+p {
+    font-size: 1vw;
+}
+
+img {
+    max-width: 10vw;
+}
