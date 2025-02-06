@@ -13,7 +13,7 @@ body::before {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(-90deg);
+    transform: translate(-50%, 35%) rotate(-90deg);
     font-size: 30vw;
     color: rgba(0, 0, 0, 0.1);
     z-index: -1;
