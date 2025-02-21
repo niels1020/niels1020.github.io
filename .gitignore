@@ -25,3 +25,6 @@ dist-ssr
 
 #rust
 /target
+
+#godot
+solar-system-in-godot-main/.godot
