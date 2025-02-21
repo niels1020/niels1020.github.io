@@ -63,6 +63,18 @@ p {
     box-shadow: 1vw 4vw 8vw rgba(0, 0, 0, 0.2); /* Optional: Adds shadow for depth */
 }
 
+.frame_horizontal_no_margin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 0.3vw solid aliceblue; /* Creates the box */
+    margin: 0; /* Optional: Adds spacing outside the box */
+    width: 80vw;
+    height: 40vw;
+    box-shadow: 1vw 4vw 8vw rgba(0, 0, 0, 0.2); /* Optional: Adds shadow for depth */
+}
+
 .frame_vertical {
     display: flex;
     flex-direction: column;
