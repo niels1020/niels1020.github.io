@@ -1,6 +1,6 @@
 @font-face {
     font-family: "retro-font";
-    src: url("../assets/80s-Retro-Future.ttf");
+    src: url("../assets/font.ttf");
 }
 
 * {
@@ -75,6 +75,20 @@ p {
     box-shadow: 1vw 4vw 8vw rgba(0, 0, 0, 0.2); /* Optional: Adds shadow for depth */
 }
 
+iframe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 0.3vw solid aliceblue; /* Creates the box */
+    margin: 0; /* Optional: Adds spacing outside the box */
+    width: 80vw;
+    height: 40vw;/*
+    width: 600px;
+    height: 800px;*/
+    box-shadow: 1vw 4vw 8vw rgba(0, 0, 0, 0.2); /* Optional: Adds shadow for depth */
+}
+
 .frame_vertical {
     display: flex;
     flex-direction: column;
@@ -110,3 +124,5 @@ h2 a {
     margin: 1vw;
     target: "_blank";
 }
+
+
